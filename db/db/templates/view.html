@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View all users</title>
+    <!-- Используйте url_for() для генерации URL к файлу стилей -->
+    <link rel="stylesheet" href="/static/forview.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>All Users : </h1>
+    <ul>
+        {% for user in users %}
+            <li>Name: {{ user.username }}, Email: {{ user.email }}, ID: {{ user.id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

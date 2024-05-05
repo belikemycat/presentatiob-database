@@ -1,0 +1,36 @@
+/* style2.css */
+
+/* Оформление заголовка */
+h1 {
+    font-size: 24px;
+    color: #333;
+    font-family: "Barlow", sans-serif;
+}
+
+/* Стилизация списка пользователей */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+li:hover {
+    background-color: #f47430;
+}
+
+/* Стилизация текста имени пользователя и email */
+li span.username {
+    font-weight: bold;
+    color: #007bff;
+}
+
+li span.email {
+    color: #555;
+}

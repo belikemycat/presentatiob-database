@@ -1,0 +1,33 @@
+<body>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" style="filter: blur(0px);" />
+                <h1>Login</h1>
+                <!-- Блок для сообщения об ошибке, если она есть -->
+                {% if error %}
+                    <div class="error-message">
+                        {{ error }}
+                    </div>
+                {% endif %}
+                <form action="/" method="POST">
+                    <label>
+                        <input type="text" name="username" placeholder="USERNAME" required />
+                    </label>
+                    <label>
+                        <input type="password" name="password" placeholder="PASSWORD" required />
+                    </label>
+                    <button type="submit" class="opacity">SUBMIT</button>
+                </form>
+                <div class="register-forget opacity">
+                    <a href="/register">REGISTER</a> <!-- Link to register page -->
+                    <a href="">FORGOT PASSWORD</a>
+                </div>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+    </section>
+</body>
