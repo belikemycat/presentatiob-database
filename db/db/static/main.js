@@ -1,3 +1,4 @@
+//js code from Ravael Alucas , changed by us
 window.addEventListener("load", event => {
 
     function productHeading() {
@@ -45,7 +46,7 @@ window.addEventListener("load", event => {
             shoppingMenu = document.querySelector('.shoppingMenu'),
             emptyCart = document.querySelector('.emptyCart');
 
-        let = priceFinal = document.querySelector('.priceFinal'),
+        let priceFinal = document.querySelector('.priceFinal'),
             priceOriginal = document.querySelector('.priceOriginal'),
             discount = null,
             sizeNumber = document.querySelector('.sizeNumber'),
