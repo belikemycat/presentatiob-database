@@ -1,13 +1,10 @@
-/* style2.css */
-
-/* Оформление заголовка */
 h1 {
     font-size: 24px;
     color: #333;
     font-family: "Barlow", sans-serif;
 }
 
-/* Стилизация списка пользователей */
+/* styling out the view of users in /view endpoint */
 ul {
     list-style-type: none;
     padding: 0;
@@ -25,7 +22,7 @@ li:hover {
     background-color: #f47430;
 }
 
-/* Стилизация текста имени пользователя и email */
+/* styling out the name and email data */
 li span.username {
     font-weight: bold;
     color: #007bff;
